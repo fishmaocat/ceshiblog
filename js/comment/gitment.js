@@ -222,7 +222,7 @@ var galTheme = {
 			for(var k = 1; k <= 25; k++) {
 				const emoji = document.createElement('img')
 				const $emoji = $(emoji)
-				$emoji.attr('src', '/imgs/smilies/' + k + '.png')
+				$emoji.attr('src', '/ceshiblog/imgs/smilies/' + k + '.png')
 				$emoji.on('click', (function (index) {
 					return function () {
 						addEmoji(index)
@@ -442,7 +442,7 @@ function loginLink() {
 function addEmoji(index) {
 	var myField
 	var myCommentTextarea = "comment"
-	index = '![:' + (index >= 10 ? '0' + index : '00' + index) + ':](' + window.location.origin + '/imgs/smilies/' + index + '.png)'
+	index = '![:' + (index >= 10 ? '0' + index : '00' + index) + ':](' + window.location.origin + '/ceshiblog/imgs/smilies/' + index + '.png)'
 	if (document.getElementById(myCommentTextarea) && document.getElementById(myCommentTextarea).type === 'textarea') {
 		myField = document.getElementById(myCommentTextarea)
 	} else {
